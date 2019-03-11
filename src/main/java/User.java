@@ -15,12 +15,4 @@ public class User {
     private String phone;
     private String address;
 
-    public static void main(String[] args) {
-        String userName="ABC";
-        String filePath="/Users/yiyezhiqiu/Desktop/df/个人备案.docx";
-        int dotAt = filePath.lastIndexOf(".");
-        StringBuilder sb = new StringBuilder(filePath);
-        sb.replace(dotAt, dotAt, "_" + userName + "_" + Utils.getCurrentTimeStr2());
-        System.out.println(sb.toString());
-    }
 }
